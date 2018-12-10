@@ -65,8 +65,8 @@
 /**
 * Allocation
 */
-#if !defined(__FreeBSD__)
-/* alloca(3) is in stdlib on FreeBSD */
+#if !defined(__FreeBSD__) && !defined(__MINGW32__)
+/* alloca(3) is in stdlib on FreeBSD and in malloc.h on Windows */
 #include <alloca.h>
 #endif
 

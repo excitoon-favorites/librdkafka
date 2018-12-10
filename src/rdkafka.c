@@ -54,7 +54,7 @@
 #include "crc32c.h"
 #include "rdunittest.h"
 
-#ifdef _MSC_VER
+#if defined(_MSC_VER) || defined(__MINGW32__)
 #include <sys/types.h>
 #include <sys/timeb.h>
 #endif

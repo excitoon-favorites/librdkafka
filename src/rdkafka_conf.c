@@ -41,7 +41,7 @@
 #endif
 #include "rdunittest.h"
 
-#ifndef _MSC_VER
+#if !defined(_MSC_VER) && !defined(__MINGW32__)
 #include <netinet/tcp.h>
 #endif
 
